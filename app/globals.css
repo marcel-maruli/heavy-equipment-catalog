@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+:root { --cream:#f2f1eb; --ink:#171a17; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--cream); color:var(--ink); font-family:Manrope,Arial,sans-serif; }
+button,a { font:inherit; }
+button { cursor:pointer; }
+a { text-decoration:none; color:inherit; }
+em { font-style:normal; }
+span { position:relative; }
+@keyframes float { 0%,100% { transform:translateY(0) rotate(-2deg); } 50% { transform:translateY(-12px) rotate(2deg); } }
+.animate-float { animation:float 5s ease-in-out infinite; }
