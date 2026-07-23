@@ -325,6 +325,7 @@ export const products = rows.map((row, index) => ({
   model: row[2],
   specs: row[3],
   image: row[4] ?? null,
+  mainImage: `/assets/products/${row[2].toLowerCase()}.${['CDM307', 'CDM308', 'CDM312'].includes(row[2]) ? 'jpg' : 'png'}`,
   url: `https://berca-mp.co.id/product/${row[2].toLowerCase()}/`,
 }));
 export const categories = [
